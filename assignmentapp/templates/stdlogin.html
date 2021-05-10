@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login page</title>
+</head>
+<body>
+    <h1>STUDENT LOGIN PAGE</h1>
+    {%if username == "xyz@gmail.com" %}
+    {%if pass == "12345" %}
+        <h1>this is {{username}} account</h1>
+        <h1>this is student login {{time}}</h1>
+        {%for i in a.home%}
+            <ul>
+                <li>{{i}}</li>
+            </ul>
+        {%endfor%}
+    {%else%}
+            <h1>invalid password</h1>
+    {%endif%}
+{%else%}
+    <h1>invalid email_id</h1>
+{%endif%}
+    
+</body>
+</html>
